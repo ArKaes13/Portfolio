@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -9,7 +10,7 @@ html {
     font-size: 10px;
 }
 
-/* Header Section */
+/* --------------Header Section-------------- */
 header {
     display: flex;
     justify-content: center;
@@ -19,7 +20,7 @@ header {
     color: white;
 }
 
-header div {
+#home {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ header div {
     padding: 2rem;
 }
 
-header div p {
+#home p {
     font-size: 2.4rem;
 }
 
@@ -41,6 +42,10 @@ header div p {
     color:#06d6a0;
 }
 
+.name span:hover {
+    animation: rainbowColor 1s infinite;
+}
+
 .introStatement {
     opacity: 0;
     position: relative;
@@ -48,7 +53,7 @@ header div p {
     animation-delay: 1.5s;
 }
 
-header div button {
+#home button {
     color: white;
     font-size: 2rem;
     opacity: 0;
@@ -63,18 +68,19 @@ header div button {
     animation-delay: 3s;
 }
 
-header div button:hover {
+#home button:hover {
     background-position: left bottom;
+    cursor: pointer;
 }
 
-header div button i {
+#home button i {
     color: #06d6a0;
     font-size: 2rem;
     margin: 0 .5rem 0 1rem;
 }
 
-header div button:hover i {
-    animation: changeIconColor 1s infinite;
+#home button:hover i {
+    animation: rainbowColor 1s infinite;
 }
 
 @keyframes fadeIn {
@@ -88,7 +94,7 @@ header div button:hover i {
     }
 }
 
-@keyframes changeIconColor {
+@keyframes rainbowColor {
     0% {color:#06d6a0}
     16.66% {color:#ffff00}
     33.32% {color:#ff7f00}
@@ -98,3 +104,34 @@ header div button:hover i {
     99.9% {color:#0000ff}
 }
 
+/* --------------Navbar-------------- */
+nav {
+    background-color: #073b4c;
+    display: flex;
+    justify-content: center;
+    opacity: 95%;
+}
+
+nav div button {
+    background-color: transparent;
+    margin: 1.8rem;
+    border: none;
+}
+
+nav div button:hover {
+    cursor: pointer;
+}
+
+nav div button a {
+    text-decoration: none;
+    color: #06d6a0;
+    font-size: 1.6rem;
+}
+
+nav div button:hover a {
+    color: #ffd166;
+}
+
+div {
+    color: #ffd166 #ef476f #06d6a0 #118ab2 #073b4c
+}
