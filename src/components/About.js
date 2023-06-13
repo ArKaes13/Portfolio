@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader.js';
 function About() {
     return (
         <section id='about'>
-            <SectionHeader />
+            <SectionHeader sectionName='About' top='120' />
             <div className='aboutIconContainer'>
                 <div className='aboutMe'>
                     <p>
@@ -52,7 +52,7 @@ function About() {
                         <p>GIT</p>
                     </div>
                     <div>
-                        <i class="devicon-github-original"></i>
+                        <i className="devicon-github-original"></i>
                         <p>GITHUB</p>
                     </div>
                     <div>
@@ -64,7 +64,7 @@ function About() {
                         <p>NPM</p>
                     </div>
                     <div>
-                        <i class="devicon-vscode-plain colored"></i>
+                        <i className="devicon-vscode-plain colored"></i>
                         <p>VSCODE</p>
                     </div>
                 </div>

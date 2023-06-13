@@ -118,6 +118,8 @@ nav {
     display: flex;
     justify-content: center;
     opacity: 95%;
+    position: sticky;
+    top: 0;
 }
 
 nav div button {
@@ -159,7 +161,6 @@ nav div button:hover a {
     border: .1rem solid #06d6a0;
     opacity: 50%;
     position: absolute;
-    top: 120%;
     width: 100%;
     z-index: -1;
 }
