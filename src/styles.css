@@ -209,6 +209,65 @@ nav div button:hover a {
     font-size: 1.2rem;
 }
 
+/* --------------Project Section-------------- */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: 40rem auto;
+    grid-template-rows: 25rem auto;
+}
+
+.projectInfo {
+    color: white;
+    max-width: 30rem;
+    margin: 5rem 0 0 10rem;
+}
+
+.projectInfo h2 {
+    font-size: 2.4rem;
+    margin: 0 0 1rem 0;
+    font-weight: 400;
+}
+
+.projectInfo p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+.projectImage img {
+    width: 50rem;
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 3rem 0 0 15rem;
+}
+
+.projectLinks button {
+    border: none;
+    border-radius: .5rem;
+    background-color: #118ab2;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 10rem;
+}
+
+.projectLinks button:hover {
+    cursor: pointer;
+}
+
+.projectLinks button:nth-child(2) {
+    background-color: #ef476f;
+}
+
 div {
     color: #ffd166 #ef476f #06d6a0 #118ab2 #073b4c
 }
