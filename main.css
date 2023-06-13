@@ -275,7 +275,8 @@ nav div button:hover a {
 .contactContainer form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    width: 40rem;
 }
 
 form input,
@@ -293,6 +294,21 @@ form textarea {
 
 form textarea {
     height: 10rem;
+}
+
+form button {
+    color: white;
+    background-color: #06d6a0;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0 0 auto;
+    width: fit-content;
+}
+
+form button:hover {
+    cursor: pointer;
 }
 
 div {
