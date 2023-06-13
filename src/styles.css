@@ -271,6 +271,30 @@ nav div button:hover a {
     background-color: #ef476f;
 }
 
+/* --------------Contact Section-------------- */
+.contactContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    background-color: #073b4c;
+    width: 40rem;
+    margin: 0 0 1rem 0;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: white;
+    border-radius: .5rem;
+    resize: none;
+}
+
+form textarea {
+    height: 10rem;
+}
+
 div {
     color: #ffd166 #ef476f #06d6a0 #118ab2 #073b4c
 }
