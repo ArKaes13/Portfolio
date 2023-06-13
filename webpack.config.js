@@ -23,6 +23,14 @@ module.exports = {
                     miniCssExtractPlugin.loader,
                     'css-loader',
                 ]
+            },
+            {
+                test: /\.(png|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                    }
+                ]
             }
         ]
     },
