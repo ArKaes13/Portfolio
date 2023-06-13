@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader.js';
 function About() {
     return (
         <section id='about'>
-            <SectionHeader sectionName='About' top='120' />
+            <SectionHeader sectionName='About' />
             <div className='aboutIconContainer'>
                 <div className='aboutMe'>
                     <p>

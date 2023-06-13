@@ -4,7 +4,7 @@ function SectionHeader(props) {
     return (
         <div className='sectionHeader'>
             <h1>{props.sectionName}</h1>
-            <div className='line' style={{ top: props.top + '%'}}></div>
+            <hr className='line'></hr>
         </div>
     );
 };

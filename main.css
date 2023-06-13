@@ -120,6 +120,7 @@ nav {
     opacity: 95%;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 nav div button {
@@ -147,6 +148,7 @@ nav div button:hover a {
     display: flex;
     justify-content: center;
     margin: 7rem 0 7rem 0;
+    position: relative;
 }
 
 .sectionHeader h1 {
@@ -163,6 +165,7 @@ nav div button:hover a {
     position: absolute;
     width: 100%;
     z-index: -1;
+    top: 50%;
 }
 
 /* --------------About Section-------------- */
@@ -213,13 +216,13 @@ nav div button:hover a {
 #projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .projectContainer {
     display: grid;
     grid-template-columns: 40rem auto;
     grid-template-rows: 25rem auto;
+    margin: 0 auto 10rem auto;
 }
 
 .projectInfo {
