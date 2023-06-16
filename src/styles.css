@@ -12,7 +12,7 @@ html {
 }
 
 /* --------------Header Section-------------- */
-header {
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ header {
     color: white;
 }
 
-#home {
+#home div {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ header {
     padding: 2rem;
 }
 
-#home p {
+#home div p {
     font-size: 2.4rem;
 }
 
@@ -53,7 +53,7 @@ header {
     animation-delay: 1.5s;
 }
 
-#home button {
+.homeContainer button {
     opacity: 0;
     border: .2rem solid #06d6a0;
     border-radius: 0.5rem;
@@ -66,28 +66,28 @@ header {
     animation-delay: 3s;
 }
 
-#home button a {
+.homeContainer button a {
     text-decoration: none;
     color: white;
     font-size: 2rem;
     padding: 1rem;
 }
 
-#home button a:hover {
+.homeContainer button a:hover {
     cursor: pointer;
 }
 
-#home button:hover {
+.homeContainer button:hover {
     background-position: left bottom;
 }
 
-#home button i {
+.homeContainer button i {
     color: #06d6a0;
     font-size: 2rem;
     margin: 0 .5rem 0 1rem;
 }
 
-#home button:hover i {
+.homeContainer button:hover i {
     animation: rainbowColor 1s infinite;
 }
 
@@ -139,7 +139,8 @@ nav div button a {
     font-size: 1.6rem;
 }
 
-nav div button:hover a {
+nav div button:hover a,
+.active {
     color: #ffd166;
 }
 
@@ -169,6 +170,10 @@ nav div button:hover a {
 }
 
 /* --------------About Section-------------- */
+#about {
+    display: flex;
+    flex-direction: column;
+}
 .aboutIconContainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -311,7 +316,7 @@ form button:hover {
     cursor: pointer;
 }
 
-/* --------------Contact Section-------------- */
+/* --------------Footer-------------- */
 footer {
     background-color: #073b4c;
     display: flex;
@@ -329,8 +334,4 @@ footer div p {
 footer div p a {
     text-decoration: none;
     color: white;
-}
-
-div {
-    color: #ffd166 #ef476f #06d6a0 #118ab2 #073b4c
 }
