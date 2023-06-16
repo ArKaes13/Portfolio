@@ -311,6 +311,26 @@ form button:hover {
     cursor: pointer;
 }
 
+/* --------------Contact Section-------------- */
+footer {
+    background-color: #073b4c;
+    display: flex;
+    justify-content: center;
+    opacity: 95%;
+    margin: 3rem 0 0 0;
+}
+
+footer div p {
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+footer div p a {
+    text-decoration: none;
+    color: white;
+}
+
 div {
     color: #ffd166 #ef476f #06d6a0 #118ab2 #073b4c
 }
