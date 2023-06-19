@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionHeader from './SectionHeader.js';
+import DevIcon from './DevIcon.js';
 
 function About() {
     return (
@@ -23,50 +24,18 @@ function About() {
                     </p>
                 </div>
                 <div className='iconContainer'>
-                    <div>
-                        <i className="devicon-html5-plain colored"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div>
-                        <i className="devicon-css3-plain colored"></i>
-                        <p>CSS</p>
-                    </div>
-                    <div>
-                        <i className="devicon-javascript-plain colored"></i>
-                        <p>JAVASCRIPT</p>
-                    </div>
-                    <div>
-                        <i className="devicon-python-plain colored"></i>
-                        <p>PYTHON</p>
-                    </div>
-                    <div>
-                        <i className="devicon-react-original colored"></i>
-                        <p>REACT</p>
-                    </div>
-                    <div>
-                        <i className="devicon-nodejs-plain colored"></i>
-                        <p>NODE.JS</p>
-                    </div>
-                    <div>
-                        <i className="devicon-git-plain colored"></i>
-                        <p>GIT</p>
-                    </div>
-                    <div>
-                        <i className="devicon-github-original"></i>
-                        <p>GITHUB</p>
-                    </div>
-                    <div>
-                        <i className="devicon-webpack-plain colored"></i>
-                        <p>WEBPACK</p>
-                    </div>
-                    <div>
-                        <i className="devicon-npm-original-wordmark colored"></i>
-                        <p>NPM</p>
-                    </div>
-                    <div>
-                        <i className="devicon-vscode-plain colored"></i>
-                        <p>VSCODE</p>
-                    </div>
+                    <DevIcon iconStyle="devicon-html5-plain colored" iconName='HTML' />
+                    <DevIcon iconStyle="devicon-css3-plain colored" iconName='CSS' />
+                    <DevIcon iconStyle="devicon-javascript-plain colored" iconName='JAVASCRIPT' />
+                    <DevIcon iconStyle="devicon-python-plain colored" iconName='PYTHON' />
+                    <DevIcon iconStyle="devicon-react-original colored" iconName='REACT' />
+                    <DevIcon iconStyle="devicon-nodejs-plain colored" iconName='NODE.JS' />
+                    <DevIcon iconStyle="devicon-git-plain colored" iconName='GIT' />
+                    <DevIcon iconStyle="devicon-github-original" iconName='GITHUB' />
+                    <DevIcon iconStyle="devicon-webpack-plain colored" iconName='WEBPACK' />
+                    <DevIcon iconStyle="devicon-npm-original-wordmark colored" iconName='NPM' />
+                    <DevIcon iconStyle="devicon-vscode-plain colored" iconName='VSCODE' />
+                    <DevIcon iconStyle="devicon-bash-plain" iconName='BASH' />
                 </div>
             </div>
         </section>
