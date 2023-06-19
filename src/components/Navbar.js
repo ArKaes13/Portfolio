@@ -24,7 +24,7 @@ function Navbar() {
         for (let section of sections) {
             const sectionId = section.getAttribute('id');
             const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 500;
+            const sectionTop = section.offsetTop - 400;
             
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 document.querySelector(`.navLink[href*=${sectionId}]`).classList.add('active');
