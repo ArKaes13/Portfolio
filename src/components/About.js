@@ -19,7 +19,7 @@ function About() {
                         now using to build this portfolio.<br/>
                         <br/>
                         Currently, I would describe myself as a front-end developer<br/>
-                        with the intent of learning MongoDB and Express in order to<br/>
+                        with the intent of expanding my back-end skills in order to<br/>
                         round myself out as more of a full-stack developer.<br/>
                     </p>
                 </div>
@@ -31,7 +31,7 @@ function About() {
                     <DevIcon iconStyle="devicon-react-original colored" iconName='REACT' />
                     <DevIcon iconStyle="devicon-nodejs-plain colored" iconName='NODE.JS' />
                     <DevIcon iconStyle="devicon-git-plain colored" iconName='GIT' />
-                    <DevIcon iconStyle="devicon-github-original" iconName='GITHUB' />
+                    <DevIcon iconStyle="devicon-amazonwebservices-plain-wordmark colored" iconName='AWS' />
                     <DevIcon iconStyle="devicon-webpack-plain colored" iconName='WEBPACK' />
                     <DevIcon iconStyle="devicon-npm-original-wordmark colored" iconName='NPM' />
                     <DevIcon iconStyle="devicon-vscode-plain colored" iconName='VSCODE' />

@@ -2,6 +2,7 @@ import React from 'react';
 import SectionHeader from './SectionHeader';
 import Project from './Project.js';
 import recipeOnPhone from '../Images/recipeOnPhone.png';
+import resumeImg from '../Images/resumeImg.jpg';
 
 function Projects() {
     return (
@@ -17,14 +18,14 @@ function Projects() {
                 repository='https://github.com/ArKaes13/heather-website'
             />
             <Project
-                projectName='PlaceHolder'
-                projectDescription='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat.'
-                imgSrc={recipeOnPhone}
-                url='#'
-                repository='#'
+                projectName='Resume on Cloud'
+                projectDescription='This project consisted of hosting my resume on the cloud
+                using Amazon Web Services. It features a semi-standard resume format and a
+                visitor counter. The visitor counter uses an API, that I wrote in Python, to 
+                communicate with DyanmoDB to retrieve and update page view data.'
+                imgSrc={resumeImg}
+                url='https://www.montgomeryresume.click/'
+                repository='https://github.com/ArKaes13/awsResume'
             />
             <Project
                 projectName='PlaceHolder'

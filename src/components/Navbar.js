@@ -43,7 +43,7 @@ function Navbar() {
                 <button><a className='navLink' href='#about'>About</a></button>
                 <button><a className='navLink' href='#projects'>Projects</a></button>
                 <button><a className='navLink' href='#contact'>Contact</a></button>
-                <button><a className='navLink' href='#'>Resume</a></button>
+                <button><a className='navLink' href='https://www.montgomeryresume.click/'>Resume</a></button>
             </div>
         </nav>
     );
