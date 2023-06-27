@@ -176,6 +176,7 @@ nav div button:hover a,
     display: flex;
     flex-direction: column;
 }
+
 .aboutIconContainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -353,4 +354,63 @@ footer div p {
 footer div p a {
     text-decoration: none;
     color: white;
+}
+
+/* --------------For Mobile-------------- */
+@media (max-width: 950px) {
+    nav div button {
+        background-color: transparent;
+        margin: 1.8rem 1rem;
+        border: none;
+    }
+
+    .aboutIconContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 5rem 0;
+    }
+
+    .aboutMe {
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0 0 0 2rem;
+    }
+
+    .iconContainer {
+        padding: 0;
+        margin: 5rem 0 0 0;
+    }
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .projectInfo {
+        margin: 0;
+        max-width: 35rem;
+    }
+
+    .projectImage img {
+        width: 35rem;
+    }
+
+    .projectLinks {
+        margin: 5rem 0 0 0;
+    }
+
+    .contactContainer form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 35rem;
+    }
+
+    form input,
+    form textarea {
+        width: 35rem;
+    }
 }
