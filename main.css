@@ -143,6 +143,7 @@ nav div button a {
 nav div button:hover a,
 .active {
     color: #ffd166;
+    font-weight: 700;
 }
 
 /* --------------Section Header-------------- */
@@ -272,6 +273,10 @@ nav div button:hover a,
     width: 12rem;
 }
 
+.projectBtn:hover {
+    transform: scale(1.10);
+}
+
 .projectBtn:nth-child(2) {
     background-color: #ef476f;
 }
@@ -327,6 +332,7 @@ form button {
 
 form button:hover {
     cursor: pointer;
+    transform: scale(1.10);
 }
 
 /* --------------Footer-------------- */
