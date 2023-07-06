@@ -260,6 +260,12 @@ nav div button:hover a,
     margin: 5rem 0 0 0;
 }
 
+.projectContainer:nth-child(4) .projectImage img {
+    margin: 5rem 0 0 0;
+    object-fit: cover;
+    height: 34rem;
+}
+
 .projectLinks {
     display: flex;
     flex-direction: column;

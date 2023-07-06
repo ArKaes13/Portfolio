@@ -3,6 +3,7 @@ import SectionHeader from './SectionHeader';
 import Project from './Project.js';
 import recipeOnPhone from '../Images/recipeOnPhone.png';
 import resumeImg from '../Images/resumeImg.jpg';
+import adminDashboard from '../Images/adminDashboard.png';
 
 function Projects() {
     return (
@@ -28,14 +29,13 @@ function Projects() {
                 repository='https://github.com/ArKaes13/awsResume'
             />
             <Project
-                projectName='PlaceHolder'
-                projectDescription='Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat.'
-                imgSrc={recipeOnPhone}
-                url='#'
-                repository='#'
+                projectName='Admin Dashboard'
+                projectDescription='A front-end exercise I did as part of the Odin Project. 
+                The purpose of the exercise was to practice styling with display:grid. 
+                Page is only a design and is nonfunctional.'
+                imgSrc={adminDashboard}
+                url='https://arkaes13.github.io/dashboard-design-exercise/'
+                repository='https://github.com/ArKaes13/dashboard-design-exercise'
             />
         </section>
     );
