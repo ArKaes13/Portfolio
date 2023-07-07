@@ -1,11 +1,42 @@
-Project Name,Portfolio,,,,,,
-Module Name,Contact Section,,,,,,
-For Commit,"332d175523f26f121dc
-947c2f9a76009c5a671f9",,,,,,
-,,,,,,,
-Test Scenario Description,Test Case Description,Test Steps,Preconditions,Post Conditions,Expected Result,Actual Result,Status
-"Verify that the ‘name’ input
-accepts/rejects text input.",Do not input any value,"1. No Value inputted
-2. Click Submit button",,,,,
-,input a name,1,,,,,
-,input a name > 40 chars,,,,,,
+For Commit,Module Name,Project Name,,,,
+1e5e3acc00faf2db2cc3b587cf6e99e7413ecb96,Contact Section,Portfolio,,,,
+,,,,,,
+Test Scenario Description,Test Case Description,Test Steps,Test Data,Expected Result,Actual Result,Status
+Verify that the ‘name’ input accepts/rejects text input.,Do not input any value,1. No Value inputted,name: null,Error message to input a value,Error message to input a value,Pass
+,,2. Click Submit button,,,,
+,input text < 40 chars,1. Input text,name: Tyler,"No error message for name, gives error message for next invalid input or submits content","No error message for name, gives error message for next invalid input or submits content",Pass
+,,2. Click Submit button,,,,
+,input text > 40 chars,1. Input large text,name: Thisisgreaterthanfortycharactersneededforfail,"Prevents user from entering > 40 chars, only allows ‘Thisisgreaterthanfortycharactersneededfo’","Prevents user from entering > 40 chars, only allows ‘Thisisgreaterthanfortycharactersneededfo’",Pass
+,,2. Click Submit button,,,,
+,,,,,,
+Verify that the ‘email’ input accepts/rejects emails.,Do not input any value,1. No Value inputted,email: null,Error message to input value,Error message to input value,Pass
+,,2. Click Submit button,,,,
+,input valid email,1. Valid email entered,email: fakeemail@test.com,"No error message for email, gives error message for next invalid input or submits content","No error message for email, gives error message for next invalid input or submits content",Pass
+,,2. Click Submit button,,,,
+,input invalid email,1. Invalid email entered,email: @fakeemail.com,Error message to input something before ‘@’,Error message to input something before ‘@’,Pass
+,,2. Click Submit button,,,,
+,input invalid email,1. Invalid email entered,email: fakeemail.com,Error message about missing ‘@’,Error message about missing ‘@’,Pass
+,,2. Click Submit button,,,,
+,input invalid email,1. Invalid email entered,email: fakeemail@.com,Error message about invalid use of ‘.’,Error message about invalid use of ‘.’,Pass
+,,2. Click Submit button,,,,
+,input invalid email,1. Invalid email entered,email: fakeemail@test,Error message to follow regex pattern,Error message to follow regex pattern,Pass
+,,2. Click Submit button,,,,
+,,,,,,
+Verify that the ‘message’ input accepts/rejects text input.,Do not input any value,1. No Value inputted,message: null,Error message to input value,Error message to input value,Pass
+,,2. Click Submit button,,,,
+,input text < 300 chars,1. Entered text,message: Hello there,"No error message for message input, gives error message for next invalid input or submits content","No error message for message input, gives error message for next invalid input or submits content",Pass
+,,2. Click Submit button,,,,
+,,,,,,
+Verify that form submits all values and redirects to thank you page,Submit form with valid inputs,1. Input valid name,name: Tyler,Redirect to thank you page and receive email with all values some time after.,Redirect to thank you page and receive email with all values some time after.,Pass
+,,2. Input valid email,email: fakeemail@test.com,,,
+,,3. Input valid message,message: Hello there,,,
+,,4. Click Submit button,,,,
+,,,,,,
+Verify that thank you page provides a link back to Portfolio,Click link on thank you page,1. Click link,N/A,Link should send user back to the Portfolio,"When hosted locally, link sends user back to Portfolio. When hosted on github pages, link directs to",Fail
+,,,,,‘https://arkaes13.github.io/’ which omits ‘Portfolio’ at the end of the url. This causes a 404.,
+Notes,,,,,,
+Redirecting to a thank you page creates complications from both,,,,,,
+react and github pages. Attempting to solve one of them further,,,,,,
+complicates the other. I have not been able to find an elegant solution,,,,,,
+yet but thankfully the issue doesn’t break anything and the user can,,,,,,
+use the browser to navigate back to the Portfolio.,,,,,,
