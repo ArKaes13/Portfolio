@@ -11,7 +11,7 @@ function Project(props) {
                 <img src={props.imgSrc} alt='image of a project'></img>
             </div>
             <div className='projectLinks'>
-                <button className='projectBtn'><a href={props.url}>Live App</a></button>
+                <button className='projectBtn'><a href={props.url}>Live Demo</a></button>
                 <button className='projectBtn'><a href={props.repository}>View Code</a></button>
             </div>
         </div>
