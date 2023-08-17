@@ -266,6 +266,12 @@ nav div button:hover a,
     height: 34rem;
 }
 
+.projectContainer:nth-child(5) .projectImage img {
+    margin: 5rem 0 0 0;
+    object-fit: cover;
+    height: 34rem;
+}
+
 .projectLinks {
     display: flex;
     flex-direction: column;

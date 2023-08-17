@@ -4,6 +4,7 @@ import Project from './Project.js';
 import recipeOnPhone from '../Images/recipeOnPhone.png';
 import resumeImg from '../Images/resumeImg.jpg';
 import modernUI from '../Images/modernUI.png';
+import travelWebsite from '../Images/travelWebsite.png';
 
 function Projects() {
     return (
@@ -36,6 +37,15 @@ function Projects() {
                 imgSrc={modernUI}
                 url='https://arkaes13.github.io/gpt4-website/'
                 repository='https://github.com/ArKaes13/gpt4-website'
+            />
+            <Project
+                projectName='Travel Website'
+                projectDescription='A front-end travel and tour website. The design is fully
+                responsive on all devices and uses the Aos library to make on-scroll
+                animation effects.'
+                imgSrc={travelWebsite}
+                url='https://arkaes13.github.io/travel-website/'
+                repository='https://github.com/ArKaes13/travel-website'
             />
         </section>
     );
